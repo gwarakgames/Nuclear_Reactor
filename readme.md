@@ -4,9 +4,11 @@
 
 A simple HTML game where you are in charge of a Nuclear Reactor.
 
+
 ## Description
 
 This game is built using HTML and Javascript. It can be run in any browser, including mobile.
+
 
 ## Getting Started
 
