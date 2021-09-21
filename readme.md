@@ -1,3 +1,5 @@
+-------------------------------------------------------------------------------------------------------------------------
+
 # Nuclear Reactor
 
 A simple HTML game where you are in charge of a Nuclear Reactor.
@@ -10,7 +12,7 @@ This game is built using HTML and Javascript. It can be run in any browser, incl
 
 ### Launching the game
 
-You can access the WIP version of the game on XXX
+You can access the WIP version of the game on https://rebel-semiconductor.github.io/Nuclear_Reactor/NuclearReactor/
 
 ### Day One
 
