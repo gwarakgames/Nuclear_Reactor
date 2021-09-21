@@ -14,7 +14,7 @@ This game is built using HTML and Javascript. It can be run in any browser, incl
 
 ### Launching the game
 
-You can access the WIP version of the game on https://rebel-semiconductor.github.io/Nuclear_Reactor/NuclearReactor/
+You can access the WIP version of the game [HERE](https://rebel-semiconductor.github.io/Nuclear_Reactor/NuclearReactor/).
 
 ### Day One
 
