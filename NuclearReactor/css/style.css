@@ -1,3 +1,86 @@
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkslategrey;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+/* GAME WINDOW */
+
+.gameWindow {
+    width:800px;
+    height:560px;
+    margin:5px auto;
+    padding:0;
+    border:1px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.gwTitle {
+    height:20px;
+    background-color: blue;
+    color: yellow;
+    font-size:small;
+}
+
+.gwMain {
+    height:520px;
+}
+
+.gwStatus {
+    height:20px;
     background-color: grey;
+    font-size:small;
+}
+
+/* STATUS AND CONTROL TABLES */
+
+/*CONTAINER TABLE*/
+.tMain {width:100%;height:100%;border-collapse:collapse;border:0;} 
+
+/*LEFT - REACTOR IMAGE*/
+.tMainLeft {width:550px;padding:0;border:0;} 
+
+#tNuclearIsland {width:550px;height:100%;display:table;}
+#tNuclearIsland tr {height:200px;}
+#tNuclearIsland td {width:50%;border: 1px dashed black;}
+
+#img_rods {width:200px;height:200px;object-fit:cover;object-position:0px 0px;}
+
+#tTurbineIsland {width:550px;height:100%;display:none;}
+#tTurbineIsland tr {height:200px;}
+#tTurbineIsland td {border: 1px dashed black;}
+
+/*RIGHT - STATUS AND CONTROL PANEL*/
+.tMainRight {width:250px;padding:0;border:0;}
+
+.tReactor, .tTurbine, .tControl {width:243px;border-collapse:collapse;font-size:small;}
+.tReactor img, .tTurbine img {vertical-align: middle;padding-right:10px;}
+
+.tReactorHeader {height:20px;color: white;background-color: purple;}
+.tReactor tr, .tReactor td {border:1px solid purple;padding:5px;}
+
+.tTurbineHeader {height:20px;color: white;background-color: blue;}
+.tTurbine tr, .tTurbine td {border:1px solid blue;padding:5px;}
+
+.tControlHeader {height:20px;color:white;background-color: green;}
+.tControl tr, .tControl td {border:1px solid green;padding:5px;}
+.tControl button {width:75px;}
+
+.spacer {
+    width:100%;
+    height:20px;
+}
+.footer {
+    width:800px;
+    height:600px;
+    margin:5px auto;
+    padding:5px 0;
+    font-size: smaller;
+    text-align: center;
+    color: white;
 }

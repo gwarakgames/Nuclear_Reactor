@@ -8,9 +8,149 @@
     <script src="js/maingame.js"></script>
   </head>
   <body>
-    <div id="gameWindow">
-        Welcome to your new *generated name*. What is your name, sir?
+    <div class="gameWindow">
+        <div class="gwTitle">
+            Nuclear Plant
+        </div>
+        <div class="gwMain">
+            <table class="tMain">
+                <tr>
+                    <td class="tMainLeft">
+                        <table id="tNuclearIsland">
+                            <tr>
+                                <td>Reactor Vessel</td>
+                                <td>Reactor Core</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Control Rods</span>
+                                    <br />
+                                    <img src="img/rods.png" alt="Control Rods" id="img_rods">
+                                </td>
+                                <td>Fuel Assembly</td>
+                            </tr>
+                        </table>
+                        <table id="tTurbineIsland">
+                            <tr>
+                                <td>Turbine Island</td>
+                                <td>Steam Turbine</td>
+                            </tr>
+                            <tr>
+                                <td>Turbine Trip</td>
+                                <td>Cooling Tower</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="tMainRight">
+                        <table>
+                            <tr>
+                                <td>
+                                    <table class="tReactor">
+                                        <tr>
+                                            <td colspan=2 class="tReactorHeader">
+                                                <a href="#" onclick="view(0)">
+                                                    <img src="img/view.png" alt="View Nuclear Island">
+                                                    <span>NUCLEAR ISLAND</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Operation</td>
+                                            <td id="stat_ni_operation">Normal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power</td>
+                                            <td id="stat_ni_power">0 MWth</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rod Position</td>
+                                            <td><span id="stat_ni_rods">100</span> Steps</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pressure</td>
+                                            <td id="stat_ni_pressure">0 MPa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inlet Temp</td>
+                                            <td><span id="stat_ni_inlet">0</span> &#8451;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr><tr>
+                                <td>
+                                    <table class="tTurbine">
+                                        <tr>
+                                            <td colspan=2 class="tTurbineHeader">
+                                                <a href="#" onclick="view(1)">
+                                                    <img src="img/view.png" alt="View Turbine Island">
+                                                    <span>TURBINE ISLAND</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Operation</td>
+                                            <td id="stat_ti_operation">Normal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power</td>
+                                            <td id="stat_ti_power">0 MWe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SG Pressure</td>
+                                            <td id="stat_ti_pressure">0 MPa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HP Flow</td>
+                                            <td id="stat_ti_flow">0 t/hr</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HP Inlet Temp</td>
+                                            <td id="stat_ti_inlet">0 &#8451;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr><tr>
+                                <td>
+                                    <table class="tControl">
+                                        <tr>
+                                            <td colspan=2 class="tControlHeader">CONTROL PANEL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rods</td>
+                                            <td>
+                                                <input type="range" min="0" max="10" value="0" class="slider" id="rods" onchange="rods(this.value)">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Turbine</td>
+                                            <td>
+                                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Button</td>
+                                            <td><button>#1</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Button</td>
+                                            <td><button>#2</button></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="gwStatus">
+            ****** Status Bar Text Here ******
+        </div>
     </div>
-    <div id="footer">Nuclear Reactor by Gwarak Games 2021</div>
+    <div class="spacer"></div>
+    <div class="footer">
+        Nuclear Reactor by Gwarak Games 2021
+    </div>
   </body>
 </html>

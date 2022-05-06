@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SuitorTron3000</title>
+    <script>       
+        var i = 0;
+        var sName = "UnnamedSuitor69";
+        var msgWelcome = "Welcome, " && sName;
+        var msgDisclaimer = "You have been selected to take the Suitable Husband test.\nPlease answer the following questions openly and honestly.";
+        var msgSep = "-----------------------------------------------";
+        type(msgDisclaimer);
+
+        function type(msg) {
+            if (i < msg.length) {
+                document.getElementById("gText").innerHTML += msg.charAt(i);
+                i++;
+                setTimeout(game, 50);
+            }
+        }        
+    </script>
+  </head>
+  <body onload="game()">
+    <div id="gameWindow">
+        <pre id="gText"></pre>
+    </div>
+  </body>
+</html>
